@@ -25,7 +25,7 @@ const EmailForm = () => {
     try {
       setIsLoading(true);
       setStatus({ message: '', type: '' });
-      const response = await axios.post('http://localhost:3000/api/send-email', emailData);
+      const response = await axios.post(process.env.REACT_APP_API_URL, emailData);
       setStatus({ message: 'Email sent successfully!', type: 'success' });
       console.log(response.data);
     } catch (error) {
