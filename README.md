@@ -23,11 +23,12 @@ Este proyecto es una aplicación para enviar correos electrónicos mediante dife
 Para ejecutar este proyecto en tu máquina local, sigue estos pasos:
 
 ### 1. Clonar el repositorio
-```bash
-git clone https://github.com/tu-usuario/tu-repositorio.git```
+```
+bash git clone https://github.com/mattibz/challenge-backend.git
+```
 
 
-2. Instalar dependencias
+### 2. Instalar dependencias
 Dirígete a la carpeta del proyecto y ejecuta los siguientes comandos para instalar las dependencias tanto para el backend como para el frontend.
 
 Backend:
@@ -35,7 +36,8 @@ Backend:
 1. Navega a la carpeta backend.
 2. Instala las dependencias:
 
-```cd backend
+```
+cd backend
 npm install
 ```
 
@@ -44,15 +46,17 @@ npm install
 1. Navega a la carpeta frontend.
 2. Instala las dependencias:
 
-```cd frontend
+```
+cd frontend
 npm install
 ```
 
 
 ### 3. Configurar variables de entorno
-Crea un archivo .env en el directorio raíz de backend y agrega las siguientes variables para configurar los proveedores de correo y el puerto:
+Crea un archivo .env en el directorio raíz de backend y agrega las siguientes variables para configurar los proveedores de correo y el puerto **estas key se pueden encontrar en el file secrets.txt adjunto**:
 
-```MAILGUN_DOMAIN=your-mailgun-domain
+```
+MAILGUN_DOMAIN=your-mailgun-domain
 MAILGUN_API_KEY=your-mailgun-api-key
 SPARKPOST_API_KEY=your-sparkpost-api-key
 PORT=3001
@@ -60,8 +64,9 @@ PORT=3001
 
 En el frontend, crea un archivo .env dentro de la carpeta frontend y agrega:
 
-```REACT_APP_API_URL=http://localhost:3001/api/send-email```
-
+```
+REACT_APP_API_URL=http://localhost:3001/api/send-email
+```
 
 ### 4. Ejecutar el proyecto
 
@@ -69,10 +74,20 @@ En el frontend, crea un archivo .env dentro de la carpeta frontend y agrega:
 
 Para iniciar el servidor backend, ve a la carpeta backend y ejecuta:
 
-```node server```
+```
+node server
+```
 
 ### Frontend
 
 Para ejecutar el frontend, ve a la carpeta frontend y ejecuta:
 
-```npm start```
+```
+npm start
+```
+
+### Preview
+
+![Captura de pantalla 2024-11-26 a la(s) 4 12 30 p  m](https://github.com/user-attachments/assets/53dd547b-0cdd-443c-9ebf-c7fdf430373b)
+![Captura de pantalla 2024-11-26 a la(s) 4 12 53 p  m](https://github.com/user-attachments/assets/835b7bd9-78cf-425e-a2da-cc7496bd9f9a)
+![Captura de pantalla 2024-11-26 a la(s) 4 17 55 p  m](https://github.com/user-attachments/assets/2bcdadd7-6f96-4cb4-99cf-a96ae2993090)
